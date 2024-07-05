@@ -342,6 +342,16 @@ Param_Table_Transmit(0, _params_table, _param_types, ARRAY_SIZE(_params_table));
 
 见下方例程，使用时添加进去就行
 
+#### 5.修改UART口
+
+在paramdecoder.h里，将这三行修改为你自己的UART接口
+
+```C
+#define SEND_UART UART_1
+#define SEND_UART_TX UART1_TX_B12
+#define SEND_UART_RX UART1_RX_B13
+```
+
 ### Example
 
 完整例程如下
